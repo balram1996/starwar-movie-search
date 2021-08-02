@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>star war</title>
+    <style>
+        body{
+            background-image: url('https://media4.giphy.com/media/zh1CiotVYB1DO2k8Ep/200w.gif?cid=82a1493bsdjmrdsqqeupg7dso5q2ss4u24fmho857oai08kn&rid=200w.gif&ct=g');
+        }
+        #container{
+            height: 300px;
+            width: 60%;
+            /* background-color: rgb(241, 36, 36); */
+            margin: auto;
+            display: flex;
+        }
+        #logo_div{
+            height: 150px;
+            width: 100%;
+            /* background-color: blanchedalmond; */
+            margin: auto;
+            margin-top: 100px;
+            margin-left: 36%;
+            
+        }
+        #logo_div img{
+            height: 120px;
+            width: 38%;
+        }
+        #query{
+            height: 60px;
+            width: 120%;
+            margin-left: -40%;
+            margin-top: 15px;
+            border-radius: 20px;
+            background-color: rgb(37, 37, 37);
+            border: none;
+            font-size: large;
+            text-align: center;
+            color: rgb(196, 196, 196);
+            outline: none;
+        }
+        ::placeholder{
+            margin-left: 70%;
+        }
+        #movies{
+            height: 400px;
+            width: 46%;
+            /* background-color: rgb(37, 37, 37); */
+            margin-left: 26.4%;
+            border-radius: 15px;
+            margin-top: -17px;
+            border-top: none;
+            /* overflow: hidden; */
+        }
+        .balli p:hover{
+            color: rgb(241, 227, 28);
+        }
+        .text_style{
+            color: rgb(196, 196, 196);
+            margin-left: 3%;
+            font-family: sans-serif;
+            background-color: rgb(37, 37, 37);
+            height: 50px;
+            margin-bottom: -20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="logo_div">
+            <img src="https://logodownload.org/wp-content/uploads/2015/12/star-wars-logo-3-1.png">
+            <input type="text" id="query" placeholder="Search Character" oninput="throwttleContent()">
+        </div>
+    </div>
+    <div id="movies"></div>
+    
+</body>
+</html>
+<script src="starwar.js"></script>
